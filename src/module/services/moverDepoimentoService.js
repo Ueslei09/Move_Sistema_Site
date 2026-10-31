@@ -9,7 +9,7 @@ export const moverDepoimentoService = {
       // Tipo de vídeo: 'youtube' ou 'local'
       videoType: "local", 
       youtubeUrl: "", // Substitua pelo link embed do YouTube
-      localVideoUrl: "/move1_video.mp4", // Caminho caso queira usar vídeo da pasta public
+      localVideoUrl: "/mover2_video.mp4", // Caminho caso queira usar vídeo da pasta public
       videoTitle: "Depoimento Maeterlink - Gdoor Zucchetti",
       posterImage: "" // Opcional: imagem de capa para o vídeo local
     }

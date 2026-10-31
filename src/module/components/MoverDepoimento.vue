@@ -60,6 +60,7 @@
       </div>
     </div>
   </section>
+  <hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />
 </template>
 
 <script setup>
@@ -97,6 +98,14 @@ const { depoimentoData, isVisible } = useMoverDepoimento()
 .depoimento-desc {
   color: var(--mover-primary-blue, #0b2545) !important;
   font-size: clamp(0.95rem, 1.1vw, 1.15rem);
+}
+
+/* Linha HR de 5px com a cor principal do projeto (#0b2545) */
+.banner-bottom-divider {
+  height: 2px !important;
+  background-color: var(--mover-primary-blue, #0b2545) !important;
+  opacity: 1 !important;
+  width: 100%;
 }
 
 /* Caixa de texto com fundo bege transparente (Estilo Glassmorphism / Bege Suave) 

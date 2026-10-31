@@ -4,7 +4,7 @@ export const topHeaderService = {
     return {
       links: [
         { name: "Contato", url: "/contato", ariaLabel: "Ir para a página de contato" },
-        { name: "Blog", url: "/blog", ariaLabel: "Ir para o blog da Mover Sistemas" }
+        { name: "Treinamentos", url: "/blog", ariaLabel: "Ir para o blog da Mover Sistemas" }
       ]
     }
   }

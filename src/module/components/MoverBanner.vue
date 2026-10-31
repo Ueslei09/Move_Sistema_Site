@@ -46,7 +46,10 @@
 
       </div>
     </div>
+    
   </section>
+   <hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />
+ 
 </template>
 
 <script setup>
@@ -78,6 +81,15 @@ const { isVisible, elementRef } = useParallax(0.05) // Dispara assim que a seç�
   transform: translateY(60px); /* Profundidade 3D diferenciada para a imagem */
   transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
   transition-delay: 0.2s; /* Atraso sutil na imagem */
+}
+
+
+/* Linha HR de 5px com a cor principal do projeto (#0b2545) */
+.banner-bottom-divider {
+  height: 2px !important;
+  background-color: var(--mover-primary-blue, #0b2545) !important;
+  opacity: 1 !important;
+  width: 100%;
 }
 
 /* Quando o IntersectionObserver ativá-lo ao rolar a página */

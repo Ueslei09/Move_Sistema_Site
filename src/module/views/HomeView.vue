@@ -5,9 +5,16 @@
     <!-- Seção do Banner Principal -->
     <MoverSectionBanner />
 
-    <MoverDepoimento /> <!-- Seção de depoimento adicionada com sucesso -->
+    <MoverDepoimento /> 
 
     <MoverBanner />
+
+    <MoverSegment />
+
+    <MoverDemonstracao />
+
+    <MoverSolucoes />
+    <MoverSoftware />
 
   </div>
 </template>
@@ -16,4 +23,8 @@
 import MoverSectionBanner from '../components/MoverSectionBanner.vue'
 import MoverDepoimento from '../components/MoverDepoimento.vue'
 import MoverBanner from '../components/MoverBanner.vue'
+import MoverSegment from '../components/MoverSegment.vue'
+import MoverDemonstracao from '../components/MoverDemonstracao.vue'
+import MoverSolucoes from '../components/MoverSolucoes.vue'
+import MoverSoftware from '../components/MoverSoftware.vue'
 </script>

@@ -298,4 +298,16 @@ const {
   opacity: 1;
   visibility: visible;
 }
+
+/* --- SOLUÇÃO RADICAL DE POINTER-EVENTS --- */
+/* Quando a navbar for rolada no desktop, desativa cliques em toda a área vazia da nav */
+.mover-main-navbar.navbar-scrolled {
+  pointer-events: none !important;
+}
+
+/* Reativa os cliques estritamente na logo para que ela continue funcionando */
+.mover-main-navbar.navbar-scrolled .brand-container,
+.mover-main-navbar.navbar-scrolled .brand-container * {
+  pointer-events: auto !important;
+}
 </style>
