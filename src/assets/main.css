@@ -1,0 +1,45 @@
+/* src/shared/assets/main.css */
+:root {
+  --mover-primary-blue: #0b2545;   
+  --mover-accent-green: #61b329;   
+  --mover-light-green: #8bc34a;    
+  --mover-silver-gray: #a6b9c7;    
+  --mover-dark-bg: #050b14;        
+  --mover-light-bg: #f8f9fa;       
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-size: 16px; /* Base padrão para o rem */
+}
+
+body {
+  font-family: 'Poppins', sans-serif !important;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: var(--mover-primary-blue);
+  overflow-x: hidden;
+}
+
+/* Garante que imagens e SVGs nunca estourem o layout no zoom */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul, ol {
+  list-style: none;
+}
