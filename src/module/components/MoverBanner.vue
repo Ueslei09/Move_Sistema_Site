@@ -48,7 +48,7 @@
     </div>
     
   </section>
-   <hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />
+  <!--<hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />-->
  
 </template>
 
@@ -86,10 +86,13 @@ const { isVisible, elementRef } = useParallax(0.05) // Dispara assim que a seç�
 
 /* Linha HR de 5px com a cor principal do projeto (#0b2545) */
 .banner-bottom-divider {
-  height: 2px !important;
+  height: 1px !important;
   background-color: var(--mover-primary-blue, #0b2545) !important;
   opacity: 1 !important;
   width: 100%;
+  position: relative;
+  z-index: 5;
+  box-shadow: 0 4px 12px rgba(11, 37, 69, 0.30);
 }
 
 /* Quando o IntersectionObserver ativá-lo ao rolar a página */

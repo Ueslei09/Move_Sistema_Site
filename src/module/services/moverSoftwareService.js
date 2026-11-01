@@ -25,7 +25,7 @@ export const moverSoftwareService = {
           size: "col-12 col-lg-3",
           title: "Gestão financeira completa com DRE",
           description: "Acompanhe a movimentação de caixa, analise o lucro, organize recebimentos e muito mais. A Lis consolida os recebimentos e pagamentos toda sexta-feira e entrega o saldo líquido direto no WhatsApp.",
-          image: "/mover_sw_3.png",
+          image: "/mover14_imagem.jpg",
           imageAlt: "Gestão financeira completa com DRE"
         }
       ],
@@ -35,25 +35,25 @@ export const moverSoftwareService = {
         {
           title: "Relatório de margem de contribuição avançado",
           description: "Descubra o lucro real de cada venda, canal e produto.",
-          image: "/mover_sw_4.png",
+          image: "/mover18_imagem.jpg",
           imageAlt: "Relatório de margem de contribuição"
         },
         {
           title: "Gestão unificada de múltiplos CNPJs",
           description: "Centralize a separação, expedição e estoque em uma única conta-mãe, com faturamento distribuído e automatizado.",
-          image: "/mover_sw_5.png",
+          image: "mover16_imagem.jpg",
           imageAlt: "Gestão unificada de múltiplos CNPJs"
         },
         {
           title: "Fluxo de pedidos automatizado",
           description: "Todos os pedidos no mesmo painel e, após a venda, o ERP emite NF, atualiza o estoque e gera o processo de expedição.",
-          image: "/mover_sw_6.png",
+          image: "/mover13_imagem.jpg",
           imageAlt: "Fluxo de pedidos automatizado"
         },
         {
           title: "Logística agilizada",
           description: "Com impressão automática de etiqueta e DANFE direto no ERP, separação e embalagem em lote, lista de separação de pedidos e conferência via bipagem.",
-          image: "/mover11_imagem.jpg",
+          image: "/mover17_imagem.jpg",
           imageAlt: "Logística agilizada"
         }
       ]

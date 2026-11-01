@@ -60,7 +60,7 @@
       </div>
     </div>
   </section>
-  <hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />
+  <!--<hr class="banner-bottom-divider m-0 border-0" aria-hidden="true" />-->
 </template>
 
 <script setup>
@@ -71,7 +71,7 @@ const { depoimentoData, isVisible } = useMoverDepoimento()
 
 <style scoped>
 .mover-depoimento-section {
-  background-color: #f1efe8; /* Fundo geral suave */
+  background-color: #e8e9eb; /* Fundo geral suave */
   min-height: 80vh;
   display: flex;
   align-items: center;

@@ -56,7 +56,7 @@ const { isVisible, elementRef } = useParallax(0.1) // Ativa o parallax assim que
 
 <style scoped>
 .mover-demonstracao-section {
-  background-color: #f1efe8 !important;
+  background-color: #0b2545 !important;
   min-height: 45vh;
   display: flex;
   align-items: center;
@@ -80,7 +80,7 @@ const { isVisible, elementRef } = useParallax(0.1) // Ativa o parallax assim que
 /* Linha HR de 5px com a cor principal do projeto (#0b2545) */
 .banner-bottom-divider {
   height: 2px !important;
-  background-color: var(--mover-primary-blue, #0b2545) !important;
+  background-color: var(--mover-primary-blue, #0d1a2b) !important;
   opacity: 1 !important;
   width: 100%;
 }
@@ -116,7 +116,7 @@ const { isVisible, elementRef } = useParallax(0.1) // Ativa o parallax assim que
 }
 
 .color-blue {
-  color: var(--mover-primary-blue, #0b2545) !important;
+  color: var(--mover-light-bg, #f8f9fa) !important;
 }
 
 /* Imagem do Personagem 3D Central (Aumentada) */

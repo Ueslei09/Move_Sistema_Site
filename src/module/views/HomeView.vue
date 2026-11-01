@@ -15,6 +15,12 @@
 
     <MoverSolucoes />
     <MoverSoftware />
+    <MoverIntegracoes />
+    <MoverEscalavel />
+    <MoverNews />
+    <MoverProvaSocial />
+    <MoverFAQ />
+    <MoverLead />
 
   </div>
 </template>
@@ -27,4 +33,12 @@ import MoverSegment from '../components/MoverSegment.vue'
 import MoverDemonstracao from '../components/MoverDemonstracao.vue'
 import MoverSolucoes from '../components/MoverSolucoes.vue'
 import MoverSoftware from '../components/MoverSoftware.vue'
+import MoverIntegracoes from '../components/MoverIntegracoes.vue'
+import MoverEscalavel from '../components/MoverEscalavel.vue'
+import MoverNews from '../components/MoverNews.vue'
+import MoverProvaSocial from '../components/MoverProvaSocial.vue'
+import MoverFAQ from '../components/MoverFAQ.vue'
+import MoverLead from '../components/MoverLead.vue'
+
+
 </script>

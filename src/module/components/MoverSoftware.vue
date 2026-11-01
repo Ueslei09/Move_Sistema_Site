@@ -274,7 +274,7 @@ const { isVisible, elementRef } = useParallax(0.05)
 
 <style scoped>
 .mover-software-section {
-  background-color: #f8f9fa !important; /* Fundo cinza claro da seção */
+  background-color: #e8e9eb !important; /* Fundo cinza claro da seção */
   min-height: 95vh;
   display: flex;
   align-items: center;

@@ -71,7 +71,7 @@ const { isVisible, elementRef } = useParallax(0.05)
 
 <style scoped>
 .mover-segment-section {
-  background-color: #f8f9fa !important;
+  background-color: #e8e9eb !important;
   min-height: 90vh;
   display: flex;
   align-items: center;
