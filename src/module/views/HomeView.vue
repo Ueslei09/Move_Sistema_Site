@@ -21,6 +21,7 @@
     <MoverProvaSocial />
     <MoverFAQ />
     <MoverLead />
+   
 
   </div>
 </template>
@@ -39,6 +40,7 @@ import MoverNews from '../components/MoverNews.vue'
 import MoverProvaSocial from '../components/MoverProvaSocial.vue'
 import MoverFAQ from '../components/MoverFAQ.vue'
 import MoverLead from '../components/MoverLead.vue'
+
 
 
 </script>

@@ -12,7 +12,7 @@ export const moverNavbarService = {
           url: "/quem-somos", 
           ariaLabel: "Página Quem somos",
           subItems: [
-            { name: "Trabalhe conosco", url: "/quem-somos/trabalhe-conosco" }
+            { name: "O que é Mover Sistemas ?", url: "/quem-somos/quem-e-mover-sistemas" }
           ]
         },
         { 
@@ -56,23 +56,23 @@ export const moverNavbarService = {
             { name: "Vendas externas", url: "/segmentos/vendas-externas" }
           ]
         },
+        //{ 
+         // name: "Seja revendedor", 
+         // url: "/revendedor", 
+         // ariaLabel: "Página Seja um revendedor",
+        //  subItems: []
+       // },
         { 
-          name: "Seja revendedor", 
-          url: "/revendedor", 
-          ariaLabel: "Página Seja um revendedor",
-          subItems: []
-        },
-        { 
-          name: "Revenda autorizada", 
+          name: "Venda autorizada", 
           url: "/revenda-autorizada", 
           ariaLabel: "Página Revenda autorizada",
           subItems: [
-            { name: "Painel da revenda", url: "/revenda/painel" },
+            { name: "Painel da venda", url: "/revenda/painel" },
             { name: "Painel de suporte", url: "/revenda/suporte" },
             { name: "Documentação", url: "/revenda/documentacao" },
             { name: "BDC", url: "/revenda/bdc" },
             { name: "Comparativo de produtos", url: "/revenda/comparativo" },
-            { name: "Biblioteca infantil", url: "/revenda/biblioteca" }
+            //{ name: "Biblioteca infantil", url: "/revenda/biblioteca" }
           ]
         }
       ]

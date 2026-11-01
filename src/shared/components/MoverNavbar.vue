@@ -48,13 +48,26 @@
             @mouseenter="setDropdown(index)"
             @mouseleave="clearDropdown"
           >
+            <!-- SE TIVER SUBITENS: USA TAG <a> ESTÁTICA PARA NÃO CHAMAR PÁGINA VAZIA -->
+            <a 
+              v-if="link.subItems && link.subItems.length > 0"
+              href="#"
+              @click.prevent
+              class="nav-link text-uppercase fw-semibold px-0 py-1 main-nav-link d-flex align-items-center gap-1 text-decoration-none"
+              :aria-label="link.ariaLabel"
+            >
+              {{ link.name }}
+              <i class="bi bi-chevron-down small-arrow" aria-hidden="true"></i>
+            </a>
+
+            <!-- SE NÃO TIVER SUBITENS: USA O ROUTER-LINK NORMALMENTE -->
             <router-link 
+              v-else 
               :to="link.url" 
               class="nav-link text-uppercase fw-semibold px-0 py-1 main-nav-link d-flex align-items-center gap-1"
               :aria-label="link.ariaLabel"
             >
               {{ link.name }}
-              <i v-if="link.subItems && link.subItems.length > 0" class="bi bi-chevron-down small-arrow" aria-hidden="true"></i>
             </router-link>
 
             <!-- SUBMENU / DROPDOWN -->
@@ -94,19 +107,15 @@
 
       <ul class="list-unstyled d-flex flex-column gap-3">
         <li v-for="(link, index) in navbarData.mainLinks" :key="index">
-          <router-link 
-            :to="link.url" 
-            class="text-decoration-none fs-5 d-block py-1 mobile-link-item fw-semibold"
-            @click="closeMobileMenu"
-          >
+          <span class="text-uppercase fs-5 d-block py-1 mobile-link-item fw-semibold text-muted">
             {{ link.name }}
-          </router-link>
-          <!-- Subitens Mobile -->
-          <ul v-if="link.subItems && link.subItems.length > 0" class="list-unstyled ps-3 mt-2 d-flex flex-column gap-2">
+          </span>
+          <!-- Subitens Mobile (São eles que chamam as páginas reais) -->
+          <ul v-if="link.subItems && link.subItems.length > 0" class="list-unstyled ps-3 mt-1 d-flex flex-column gap-2">
             <li v-for="(sub, sIdx) in link.subItems" :key="sIdx">
               <router-link 
                 :to="sub.url" 
-                class="text-decoration-none text-muted d-block py-1 mobile-sublink"
+                class="text-decoration-none d-block py-1 mobile-sublink fw-medium"
                 @click="closeMobileMenu"
               >
                 - {{ sub.name }}
@@ -123,7 +132,8 @@
 </template>
 
 <script setup>
-import { useMoverNavbar } from '../composables/useMoverNavbar'
+import { useMoverNavbar } from '@/shared/composables/useMoverNavbar'
+
 const { 
   navbarData, 
   isMobileMenuOpen, 
@@ -195,6 +205,7 @@ const {
   font-size: 0.9rem;
   letter-spacing: 0.5px;
   transition: color 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .small-arrow {
@@ -299,13 +310,11 @@ const {
   visibility: visible;
 }
 
-/* --- SOLUÇÃO RADICAL DE POINTER-EVENTS --- */
-/* Quando a navbar for rolada no desktop, desativa cliques em toda a área vazia da nav */
+/* --- SOLUÇÃO DE POINTER-EVENTS --- */
 .mover-main-navbar.navbar-scrolled {
   pointer-events: none !important;
 }
 
-/* Reativa os cliques estritamente na logo para que ela continue funcionando */
 .mover-main-navbar.navbar-scrolled .brand-container,
 .mover-main-navbar.navbar-scrolled .brand-container * {
   pointer-events: auto !important;

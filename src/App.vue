@@ -11,6 +11,10 @@
 
     <!-- Ícone Flutuante do WhatsApp (Inferior Esquerdo) -->
     <FloatingWhatsApp />
+
+     <MoverFootContatos />
+     <MoverFooterCopy />
+
   </div>
 </template>
 
@@ -19,4 +23,6 @@ import PagePreloader from '@/shared/components/PagePreloader.vue'
 import TopHeader from '@/shared/components/TopHeader.vue'
 import MoverNavbar from '@/shared/components/MoverNavbar.vue'
 import FloatingWhatsApp from '@/shared/components/FloatingWhatsApp.vue'
+import MoverFootContatos from '@/shared/components/MoverFootContatos.vue'
+import MoverFooterCopy from '@/shared/components/MoverFooterCopy.vue'
 </script>
