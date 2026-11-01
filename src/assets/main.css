@@ -15,8 +15,8 @@
 }
 
 html, body {
-  height: 100%;
-  font-size: 16px; /* Base padrão para o rem */
+  max-width: 100%;
+  overflow-x: hidden; /* Base padrão para o rem */
 }
 
 body {
