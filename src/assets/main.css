@@ -14,9 +14,10 @@
   padding: 0;
 }
 
-html, body {
-  max-width: 100%;
-  overflow-x: hidden; /* Base padrão para o rem */
+/* Permitimos que o html e body fluam normalmente no desktop para não quebrar o sticky */
+html {
+  width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -25,10 +26,12 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: #ffffff;
   color: var(--mover-primary-blue);
-  overflow-x: hidden;
+  width: 100%;
+  position: relative;
+  /* Removemos o overflow-x daqui para evitar conflito com o sticky da Navbar no desktop */
 }
 
-/* Garante que imagens e SVGs nunca estourem o layout no zoom */
+/* Garante que imagens e SVGs nunca estourem o layout */
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
