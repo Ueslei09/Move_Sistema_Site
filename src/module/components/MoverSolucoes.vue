@@ -38,11 +38,29 @@
         <div class="col-12 col-lg-6 text-center position-relative p-0 d-flex align-items-center justify-content-center solucoes-video-col">
           <div class="video-container shadow-lg rounded-4 overflow-hidden w-100">
             <div class="ratio ratio-16x9">
-              <iframe 
-                :src="solucoesData.videoUrl" 
-                title="Apresentação da solução ERP Mover" 
-                allowfullscreen
-              ></iframe>
+              <!-- SE FOR YOUTUBE: USA IFRAME COM AUTOPLAY DESLIGADO -->
+          <iframe 
+              v-if="isYoutubeVideo(solucoesData.videoUrl)"
+              :src="getYoutubeEmbedUrl(solucoesData.videoUrl)" 
+              title="Apresentação da solução ERP Mover" 
+              allowfullscreen
+             ></iframe>
+
+             <!-- SE FOR VÍDEO LOCAL (.mp4): USA A TAG VIDEO NATIVA -->
+      <video 
+         ref="localVideoRef"
+        v-else
+        :src="solucoesData.videoUrl" 
+        :poster="solucoesData.videoPoster"
+        controls 
+        preload="metadata"
+        playsinline
+        class="w-100 h-100 object-fit-cover"
+      >
+        Seu navegador não suporta a tag de vídeo.
+      </video>
+
+
             </div>
           </div>
         </div>
@@ -98,7 +116,7 @@
 import { useMoverSolucoes } from '../composables/useMoverSolucoes'
 import { useParallax } from '@/shared/composables/useParallax'
 
-const { solucoesData } = useMoverSolucoes()
+const { solucoesData, localVideoRef,isYoutubeVideo, getYoutubeEmbedUrl } = useMoverSolucoes()
 const { isVisible, elementRef } = useParallax(0.05)
 </script>
 

@@ -14,10 +14,10 @@
   padding: 0;
 }
 
-/* Permitimos que o html e body fluam normalmente no desktop para não quebrar o sticky */
+/* Permitimos que o html e body fluam normalmente para não quebrar o sticky do scrolly */
 html {
   width: 100%;
-  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -27,11 +27,10 @@ body {
   background-color: #ffffff;
   color: var(--mover-primary-blue);
   width: 100%;
-  position: relative;
-  /* Removemos o overflow-x daqui para evitar conflito com o sticky da Navbar no desktop */
+  margin: 0;
+  padding: 0;
 }
 
-/* Garante que imagens e SVGs nunca estourem o layout */
 img, picture, video, canvas, svg {
   display: block;
   max-width: 100%;
@@ -45,4 +44,45 @@ a {
 
 ul, ol {
   list-style: none;
+}
+
+section {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Containers centralizados padrão */
+.container, 
+.container-fluid {
+  width: 100%;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  box-sizing: border-box;
+}
+.about-view-container, 
+section, 
+.container, 
+.container-fluid, 
+.row {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
+/* Proteção exclusiva para dispositivos móveis onde o layout costuma deslocar */
+@media (max-width: 992px) {
+  body, html {
+    overflow-x: hidden !important;
+    position: relative;
+    width: 100%;
+  }
+
+  /* Garante que as linhas do Bootstrap não criem margens negativas para fora da tela no mobile */
+  .row {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 }

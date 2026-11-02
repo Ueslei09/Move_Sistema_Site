@@ -8,7 +8,7 @@ export const moverSolucoesService = {
       buttonText: "Teste gratuitamente",
       buttonUrl: "/contato",
       ariaLabelButton: "Solicitar teste gratuito das soluções Mover Sistemas",
-      
+      //videoUrl: "https://www.youtube.com/embed/0vjQTsEZDIE"
       // Configuração do vídeo/mockup à direita
       videoUrl: "/mover3_video.mp4", // Substitua pelo link do vídeo se houver
       videoPoster: "/moovelogo1_imagem.png",
