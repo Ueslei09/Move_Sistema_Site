@@ -56,7 +56,7 @@ const { whatsappUrl, ariaLabel } = useWhatsApp()
 }
 
 .whatsapp-float-btn::after {
-  animation-delay: 1s; /* Cria a segunda onda sequencial */
+  animation-delay: 1s;
 }
 
 @keyframes magnetic-wave {
@@ -65,8 +65,8 @@ const { whatsappUrl, ariaLabel } = useWhatsApp()
     opacity: 1;
   }
   100% {
-    transform: scale(1.8); /* Expande a onda para fora */
-    opacity: 0; /* Desaparece suavemente */
+    transform: scale(1.8);
+    opacity: 0;
   }
 }
 
@@ -78,7 +78,7 @@ const { whatsappUrl, ariaLabel } = useWhatsApp()
 
 .whatsapp-float-btn:hover::before,
 .whatsapp-float-btn:hover::after {
-  animation: none; /* Pausa as ondas ao passar o mouse para dar foco */
+  animation: none;
 }
 
 @media (max-width: 768px) {

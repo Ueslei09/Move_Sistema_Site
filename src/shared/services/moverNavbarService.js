@@ -20,7 +20,7 @@ export const moverNavbarService = {
           url: "/solucoes", 
           ariaLabel: "Página de Soluções",
           subItems: [
-            { name: "MPro", url: "/solucoes/mpro" },
+            { name: "MPro", url: "/mpro" },
             { name: "MSlim", url: "/solucoes/mslim" },
             { name: "Mweb", url: "/solucoes/mweb" },
             { name: "MMicro", url: "/solucoes/mmicro" },

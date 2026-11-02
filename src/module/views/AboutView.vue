@@ -1,6 +1,6 @@
 <!-- src/views/AboutView.vue -->
 <template>
-  <main class=" about-view-wrapper w-100">
+  <main class=" about-view-wrapper container-fluid w-100">
     <AboutSectionPrincipal />
      <AboutValoresSlide />
     <AboutDemostracao />
